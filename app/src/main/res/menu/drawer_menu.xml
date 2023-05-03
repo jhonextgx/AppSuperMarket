@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_menu_home"
+            android:icon="@drawable/ic_baseline_home"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_menu_habladores"
+            android:icon="@drawable/ic_baseline_habladores"
+            android:title="@string/menu_habladores" />
+        <item
+            android:id="@+id/nav_menu_escanear"
+            android:icon="@drawable/ic_baseline_camera"
+            android:title="@string/menu_escanear" />
+
+        <item
+            android:id="@+id/nav_menu_buscar"
+            android:icon="@drawable/ic_baseline_search"
+            android:title="@string/menu_buscar" />
+        <item
+            android:id="@+id/nav_menu_inv"
+            android:icon="@drawable/ic_baseline_insert_chart_inv"
+            android:title="@string/menu_inventario" />
+
+        <item android:title="">
+            <menu>
+                <item
+                    android:id="@+id/nav_menu_salir"
+                    android:icon="@android:drawable/ic_lock_power_off"
+                    android:title="@string/menu_salir" />
+            </menu>
+        </item>
+    </group>
+</menu>

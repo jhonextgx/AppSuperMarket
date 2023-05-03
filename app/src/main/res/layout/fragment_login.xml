@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Vistas.LoginFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dip">
+
+        <EditText
+            android:id="@+id/txtUser"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="90dp"
+            android:hint="Usuario"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/txtPass"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dip"
+            android:layout_marginBottom="30dip"
+            android:hint="Contraseña"
+            android:inputType="textPassword" />
+
+        <!--<Button android:id="@+id/btnLogin"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Iniciar"
+            android:layout_gravity="center_horizontal"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip" />-->
+        <!--style="@style/Widget.AppCompat.Button.Colored" style="@style/Widget.MaterialComponents.Button.Icon" style="@style/Widget.AppCompat.Button.Borderless"-->
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip"
+            android:text="Iniciar"
+            android:theme="@style/AppTheme.Button"
+            app:icon="@drawable/ic_baseline_how_to_reg_24" />
+
+        <TextView
+            android:id="@+id/login_error"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dip"
+            android:layout_marginBottom="40dip"
+            android:gravity="center"
+            android:textColor="#0b84aa"
+            android:textSize="20dip" />
+
+
+    </LinearLayout>
+
+    <!--  <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#FFA726"
+        android:orientation="vertical">
+
+      <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="6dp"
+            android:text="Fixed FOOTER/BOTTOM BAR for Ads"
+            android:textColor="#FFF"
+            android:textSize="20dp" />
+
+    </LinearLayout>-->
+</FrameLayout>
